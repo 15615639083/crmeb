@@ -5,7 +5,7 @@
     "versionName" : "2.1",
     "versionCode" : 2,
     "transformPx" : false,
-    /* 5+App特有相关 */
+
     "app-plus" : {
         "usingComponents" : true,
         "nvueCompiler" : "uni-app",
@@ -15,7 +15,7 @@
             "autoclose" : true,
             "delay" : 0
         },
-        /* 模块配置 */
+
         "modules" : {
             "Share" : {},
             "Payment" : {},
@@ -28,9 +28,9 @@
             "iBeacon" : {},
             "Camera" : {}
         },
-        /* 应用发布信息 */
+
         "distribute" : {
-            /* android打包配置 */
+
             "android" : {
                 "permissions" : [
                     "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -50,7 +50,7 @@
                     "prompt" : "应用保存运行状态等信息，需要获取读写手机存储（系统提示为访问设备上的照片、媒体内容和文件）权限，请允许。"
                 }
             },
-            /* ios打包配置 */
+
             "ios" : {
                 "capabilities" : {
                     "entitlements" : {
@@ -68,7 +68,7 @@
                 "idfa" : false,
                 "dSYMs" : false
             },
-            /* SDK配置 */
+
             "sdkConfigs" : {
                 "ad" : {},
                 "geolocation" : {
@@ -149,11 +149,11 @@
             }
         }
     },
-    /* 快应用特有相关 */
+
     "quickapp" : {},
-    /* 小程序特有相关 */
+
     "mp-weixin" : {
-        "appid" : "wx2ce61fcc6fc5f952",
+        "appid" : "wx0a60369d57dbf817",
         "setting" : {
             "urlCheck" : false,
             "minified" : true,
@@ -225,5 +225,5 @@
     },
     "sassImplementationName" : "node-sass"
 }
-/* ios打包配置 */
+
 

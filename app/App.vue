@@ -264,7 +264,7 @@
 	@import 'static/css/guildford.css';
 	@import 'static/css/style.scss';
 	@import 'static/css/unocss.css';
-	@import 'static/fonts/font.css';
+	@import 'static/iconfont/iconfont.css';
 
 	/* 条件编译，仅在H5平台生效 */
 	// #ifdef H5
