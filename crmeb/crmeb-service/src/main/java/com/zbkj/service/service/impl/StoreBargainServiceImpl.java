@@ -693,11 +693,18 @@ public class StoreBargainServiceImpl extends ServiceImpl<StoreBargainDao, StoreB
             }
             bargainUserList.addAll(bargainUsers);
         }
-        boolean b = storeBargainUserService.updateBatchById(bargainUserList, 100);
-        if (!b) {
-            logger.error("砍价活动结束后更新用户状态定时任务——————失败");
-            throw new CrmebException("砍价活动结束后更新用户状态失败");
+
+        // ================== 修复代码：开始 ==================
+        // 关键：空集合不执行更新！
+        if (CollUtil.isEmpty(bargainUserList)) {
+            logger.info("砍价活动结束后，无需要更新状态的用户");
+            return;
         }
+
+        // 执行批量更新
+        storeBargainUserService.updateBatchById(bargainUserList, 100);
+        logger.info("砍价活动结束后更新用户状态成功，更新数量：" + bargainUserList.size());
+        // ================== 修复代码：结束 ==================
     }
 
     /**

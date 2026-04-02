@@ -45,3 +45,11 @@ src/main/.DS_Store
 
 
 xx
+/crmeb_admin_log/debug/log-debug-2026-03-25.0.log
+/crmeb_admin_log/debug/log-debug-2026-03-30.0.log
+/crmeb_admin_log/error/log-error-2026-03-25.0.log
+/crmeb_admin_log/error/log-error-2026-03-30.0.log
+/crmeb_admin_log/log_debug.log
+/crmeb_admin_log/log_error.log
+/crmeb_admin_log/log_info.log
+/crmeb_admin_log/log_warn.log
